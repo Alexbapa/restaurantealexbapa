@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/restaurantealexbapa/static/css/main.a59d20ef.css",
-    "main.js": "/restaurantealexbapa/static/js/main.9a2c8b57.js",
+    "main.js": "/restaurantealexbapa/static/js/main.cdc9e421.js",
     "static/js/787.dd10d698.chunk.js": "/restaurantealexbapa/static/js/787.dd10d698.chunk.js",
     "static/media/logo.svg": "/restaurantealexbapa/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/restaurantealexbapa/index.html",
     "main.a59d20ef.css.map": "/restaurantealexbapa/static/css/main.a59d20ef.css.map",
-    "main.9a2c8b57.js.map": "/restaurantealexbapa/static/js/main.9a2c8b57.js.map",
+    "main.cdc9e421.js.map": "/restaurantealexbapa/static/js/main.cdc9e421.js.map",
     "787.dd10d698.chunk.js.map": "/restaurantealexbapa/static/js/787.dd10d698.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a59d20ef.css",
-    "static/js/main.9a2c8b57.js"
+    "static/js/main.cdc9e421.js"
   ]
 }
