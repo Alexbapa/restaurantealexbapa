@@ -12,10 +12,10 @@ function App() {
   return (
        <BrowserRouter >
         <Routes>
-          <Route path='/tiendaDiscosDos/' element={ <Container /> }>
+          <Route path='/restaurantealexbapa/' element={ <Container /> }>
             <Route index element={ <Home/>}></Route>
-            <Route path='/tiendaDiscosDos/contact' element={ <Formu /> }></Route>
-            <Route path='/tiendaDiscosDos/address' element={ <Address /> }></Route>
+            <Route path='/restaurantealexbapa/contact' element={ <Formu /> }></Route>
+            <Route path='/restaurantealexbapa/address' element={ <Address /> }></Route>
             <Route path='*' element={ <Nopage /> }></Route>
           </Route>
         </Routes>
