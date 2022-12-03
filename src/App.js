@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {HashRouter, Route, Routes} from  "react-router-dom";
+import {BrowserRouter, Route, Routes} from  "react-router-dom";
 import Container from "./Components/Container";
 import Home from './Components/Home';
 import Nopage from './Components/Nopage';
@@ -9,7 +9,7 @@ import Formu   from './Components/Formu';
 
 function App() {
   return (
-       <HashRouter>
+       <BrowserRouter>
         <Routes>
           <Route path='/tiendaDiscosDos/' element={ <Container /> }>
             <Route index element={ <Home/>}></Route>
@@ -17,7 +17,7 @@ function App() {
             <Route path='*' element={ <Nopage /> }></Route>
           </Route>
         </Routes>
-       </HashRouter>
+       </BrowserRouter>
   );
 }
 
