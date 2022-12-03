@@ -9,9 +9,9 @@ import Formu   from './Components/Formu';
 
 function App() {
   return (
-       <BrowserRouter  basename='tiendaDiscosDos'>
+       <BrowserRouter >
         <Routes>
-          <Route path='/' element={ <Container /> }>
+          <Route path='/tiendaDiscosDos/' element={ <Container /> }>
             <Route index element={ <Home/>}></Route>
             <Route path='/contact' element={ <Formu /> }></Route>
             <Route path='*' element={ <Nopage /> }></Route>
