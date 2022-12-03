@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/tiendaDiscosDos/static/css/main.756af292.css",
-    "main.js": "/tiendaDiscosDos/static/js/main.381448a9.js",
+    "main.js": "/tiendaDiscosDos/static/js/main.f5cf1a6c.js",
     "static/js/787.24bd264d.chunk.js": "/tiendaDiscosDos/static/js/787.24bd264d.chunk.js",
     "static/media/logo.svg": "/tiendaDiscosDos/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/tiendaDiscosDos/index.html",
     "main.756af292.css.map": "/tiendaDiscosDos/static/css/main.756af292.css.map",
-    "main.381448a9.js.map": "/tiendaDiscosDos/static/js/main.381448a9.js.map",
+    "main.f5cf1a6c.js.map": "/tiendaDiscosDos/static/js/main.f5cf1a6c.js.map",
     "787.24bd264d.chunk.js.map": "/tiendaDiscosDos/static/js/787.24bd264d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.756af292.css",
-    "static/js/main.381448a9.js"
+    "static/js/main.f5cf1a6c.js"
   ]
 }
