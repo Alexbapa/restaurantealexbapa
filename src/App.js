@@ -9,7 +9,7 @@ import Formu   from './Components/Formu';
 
 function App() {
   return (
-       <BrowserRouter>
+       <BrowserRouter  basename='/tiendaDiscosDos'>
         <Routes>
           <Route path='/tiendaDiscosDos/' element={ <Container /> }>
             <Route index element={ <Home/>}></Route>
