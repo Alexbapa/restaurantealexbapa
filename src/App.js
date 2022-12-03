@@ -2,10 +2,11 @@ import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter, Route, Routes} from  "react-router-dom";
-import Container from "./Components/Container";
-import Home from './Components/Home';
-import Nopage from './Components/Nopage';
-import Formu   from './Components/Formu';
+import Container from "./Components/Shared/Container";
+import Home from './Components/Pages/Home';
+import Nopage from './Components/Pages/Nopage';
+import Address from './Components/Pages/Addres';
+import Formu   from './Components/Shared/Formu';
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
           <Route path='/tiendaDiscosDos/' element={ <Container /> }>
             <Route index element={ <Home/>}></Route>
             <Route path='/tiendaDiscosDos/contact' element={ <Formu /> }></Route>
-            <Route path='/tiendaDiscosDos/*' element={ <Nopage /> }></Route>
+            <Route path='/tiendaDiscosDos/address' element={ <Address /> }></Route>
+            <Route path='*' element={ <Nopage /> }></Route>
           </Route>
         </Routes>
        </BrowserRouter>
