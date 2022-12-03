@@ -13,7 +13,7 @@ function App() {
         <Routes>
           <Route path='/tiendaDiscosDos/' element={ <Container /> }>
             <Route index element={ <Home/>}></Route>
-            <Route path='contact' element={ <Formu /> }></Route>
+            <Route path='/contact' element={ <Formu /> }></Route>
             <Route path='*' element={ <Nopage /> }></Route>
           </Route>
         </Routes>
