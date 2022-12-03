@@ -9,11 +9,11 @@ const Header = () =>{
     return (
         <Navbar bg="dark" variant='dark'>
           <Container>
-            <Link to="/restaurantealexbapa/" className='navbar-brand'>Tienda de Discos</Link>
+            <Link to="/restaurantealexbapa/" className='navbar-brand'>Restaurante ABP</Link>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
-              <Link to="/restaurantealexbapas/address" className='nav-link'>Dirección</Link>
+              <Link to="/restaurantealexbapa/address" className='nav-link'>Dirección</Link>
                 <Link to="/restaurantealexbapa/contact" className='nav-link'>Contacto</Link>
               </Nav>
             </Navbar.Collapse>
