@@ -1,45 +1,44 @@
+import { collection, onSnapshot, query } from 'firebase/firestore';
+import { useEffect, useState } from 'react';
+
 import Carousel from 'react-bootstrap/Carousel';
+import { db } from '../../config/firebase';
 
 const Carrusel = () =>{
+  const[newSite, setNewSite] = useState([]);
+  
+   useEffect(()=>{
+    const q = query(collection(db, 'itemsCarrusel'));
+
+    onSnapshot(q,(querySnapshot)=>{
+       setNewSite(
+        querySnapshot.docs.map((item)=>({
+            id: item.id,
+            data: item.data(),
+        }))
+       );
+    });
+
+   }, []);
+
     return(
         <Carousel>
-        <Carousel.Item>
-          <img
-            className="d-block imagencarrusel "
-            src="https://picsum.photos/300/200"
-            alt="First slide"
-          />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block imagencarrusel"
-            src="https://picsum.photos/300/200"
-            alt="Second slide"
-          />
-  
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block imagencarrusel "
-            src="https://picsum.photos/300/200"
-            alt="Third slide"
-          />
-  
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
+          {newSite.map((items)=> (
+  <Carousel.Item>
+  <img
+    className="d-block imagencarrusel "
+    src="https://picsum.photos/300/200"
+    alt="First slide"
+  />
+  <Carousel.Caption>
+    <h3>{items.data.title}</h3>
+    <p>{items.data.description}</p>
+  </Carousel.Caption>
+</Carousel.Item>
+
+          ))}
+      
+      
       </Carousel>
     );
 }

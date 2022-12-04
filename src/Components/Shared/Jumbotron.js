@@ -10,11 +10,10 @@ const Jumbotron = () =>{
         <Col>
         <Card style={{ width: '18rem' }} className='text-center'>
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+        <Card.Title>Restaurante Alejandro Barcena Panigua</Card.Title>
+        <Card.Subtitle className="mb-2 text-muted">Alexbapa</Card.Subtitle>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          Nos especializamos en comida React, contamos con lo mejor para crear platillos de nivel mundial usando los componentes mas apetitosos del mundo.
         </Card.Text>
       </Card.Body>
     </Card>
